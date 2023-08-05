@@ -21,9 +21,6 @@ body {
     padding: 20px;
     display: flex;
     justify-content: space-around;
-}
-
-.border-blue {
-    border: 1px dotted blue;
+    background:green;
 }
 
