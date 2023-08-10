@@ -36,3 +36,32 @@ html, body {
 .container > li {
   background-color: #96ceb4;
 }
+.container {
+  border: 5px solid #ffcc5c;
+  display: flex;
+}
+
+.search {
+  flex: 1;
+}
+
+@media all and (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .container > li {
+    flex: 1 1 50%;
+  }
+  
+  .search > input {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .container > li {
+    flex: 1 1 100%;
+  }
+}
+
+
