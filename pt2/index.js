@@ -1,13 +1,19 @@
-let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
+let fruit = ["🍎", "🍊", "🍎", "🍎", "🍊"]
+let appleShelf = document.getElementById("apple-shelf")
+let orangeShelf = document.getElementById("orange-shelf")
 
-/* Use a for loop to log the following to the console:
+// Create a function that puts the apples onto the appleShelf
+// and the oranges onto the orangeShelf. Use a for loop,
+// a conditional statement, and the textContent property.
 
-The 5 largest countries in the world:
-- China
-- India
-- United States
-- Indinesia
-- Pakistan
-*/
+function sortFruit() {
+    for (let i = 0; i < fruit.length; i++) {
+        if (fruit[i] === "🍎") {
+            appleShelf.textContent += "🍎"
+        } else if (fruit[i] === "🍊") {
+            orangeShelf.textContent += "🍊"
+        }
+    }
+}
 
-for (let i = 0; i < )
+sortFruit() 
